@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Team 077</title>
+    <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
+    <link href="../../../static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../static/css/style.css" rel="stylesheet">
+    <script src="../../../static/js/lib/jquery.min.js"></script>
+    <script src="../../../static/js/lib/bootstrap.min.js"></script>
+    <script src="../../../static/js/dashboard.js"></script>
+    <script src="../../../static/js/lib/scripts.js"></script>
+  </head>
+  <body onload="OnDashboardLoad()">
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="text-primary">
+				Flight prediction dashboard
+			</h3>
+			<div class="row">
+				<div class="col-md-6">
+					<div class="jumbotron card card-block">
+                        <h2>
+                            Flight details
+                        </h2>
+                        <dl>
+                            <dt>
+                                <span>Flight number:</span>
+                            </dt>
+                            <dd id="flightNumber">
+                            </dd>
+                            <dt>
+                                Date of Journey
+                            </dt>
+                            <dd>
+                                <span id="doj"></span>
+                            </dd>
+                            <dt>
+                                Origin
+                            </dt>
+                            <dd id="origin">
+                            </dd>
+                            <dt>
+                                Destination
+                            </dt>
+                            <dd id="destination">
+                            </dd>
+                        </dl>
+                    </div>
+				</div>
+				<div class="col-md-6">
+					<h3>
+						Our prediction
+					</h3>
+                    <p id="delay_message">
+                        Your flight is delayed by 15 minutes. Please have a look at our analytics and flight recommendations.
+                    </p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-10">
+                    <h3>
+                        Recommendations
+                    </h3>
+					<table class="table table-bordered">
+						<thead class="thead-dark">
+							<tr>
+								<th>
+									#
+								</th>
+								<th>
+									Flight Number
+								</th>
+								<th>
+									Airline
+								</th>
+								<th id="PlaceId">
+									Place
+								</th>
+								<th>
+									Date
+								</th>
+							</tr>
+						</thead>
+						<tbody></tbody>
+							
+					</table>
+				</div>
+				<div class="col-md-2"></div>
+			</div>
+            <div class="row" style="margin-top: 10px;">
+				<div class="col-md-10">
+                    <h3>
+                        Intelligent insights about the flight
+                    </h3>
+                    </div>
+                </div>
+			<div class="row">
+				<div class="col-md-6" id="line_chart" style="margin-top: 20px;">
+                    <h4> Past performance of your flight</h4>
+				</div>
+				<div class="col-md-6" id="bar_chart" style="margin-top: 20px;">
+                    <h4> Factors contributing to the prediction</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+  </body>
+</html>
