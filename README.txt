@@ -35,7 +35,17 @@ Sample flights for testing:
 
 NOTE: CSV files containing prediction outputs for arriving and departing flights can be found in CODE/app/static/
 
-
 DEMO VIDEO
 ----------
 Please follow this link for the Demo Video : https://youtu.be/DiDkDBAxnhc
+
+DATA
+----------
+Raw data can be downloaded from the following links:
+- flight departures: https://www.dubaipulse.gov.ae/data/dubai-airports-flight-info/da_flight_information_departures-open
+- flight arrivals: https://www.dubaipulse.gov.ae/data/dubai-airports-flight-info/da_flight_information_arrivals-open
+- weather: https://www.ncei.noaa.gov/access/search/data-search/global-summary-of-the-day
+
+
+
+
